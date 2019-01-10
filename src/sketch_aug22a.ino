@@ -1,13 +1,13 @@
-int potPin = 7;    
+//int potPin = 7;    
 int ledPin = 13;      
-int val = 0;         
+int val = 200;         
 
 void setup() {
   pinMode(ledPin, OUTPUT);  
 }
 
 void loop() {
-  val = analogRead(potPin);    
+  //val = analogRead(potPin);    
   digitalWrite(ledPin, HIGH);  // Open the LED.
   delay(val);                
   digitalWrite(ledPin, LOW);   // Close the LED.
